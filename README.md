@@ -17,8 +17,8 @@ Atividade de criação e manipulação de um banco de dados de uma pizzaria, uti
 
 ### MER Conceitual
 
-![MER Conceitual da Pizzaria](imgs/MER_DER_onceitual.png)
+![MER DER Conceitual](pizzaria_db/imgs/MER_DER_conceitual.png)
 
 ### MER Lógico
 
-![MER Lógico da Pizzaria](imgs/MER_DER_logico.png)
+![MER DER Lógico](pizzaria_db/imgs/MER_DER_logico.png)
