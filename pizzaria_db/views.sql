@@ -18,7 +18,7 @@ FROM pedidos p
 INNER JOIN clientes c
 ON p.cliente_id = c.cliente_id;
 
--- Desafio 1: pedidos, itens, nome dos clientes e nome das pizzas
+-- Desafio 1
 CREATE VIEW vw_pedidos_itens AS
 SELECT
     p.pedido_id,
@@ -34,7 +34,7 @@ ON p.pedido_id = ip.pedido_id
 INNER JOIN pizzas pi
 ON ip.pizza_id = pi.pizza_id;
 
--- Desafio 2: pedidos com subtotal
+-- Desafio 2
 CREATE VIEW vw_pedidos_subtotal AS
 SELECT
     p.pedido_id,
@@ -51,7 +51,7 @@ ON p.pedido_id = ip.pedido_id
 INNER JOIN pizzas pi
 ON ip.pizza_id = pi.pizza_id;
 
--- Desafio 3: valor total de cada pedido
+-- Desafio 3
 CREATE VIEW vw_total_pedidos AS
 SELECT
     pedido_id,
@@ -59,7 +59,7 @@ SELECT
 FROM itens_pedido
 GROUP BY pedido_id;
 
--- Desafio 4: quantidade de pizzas em cada pedido
+-- Desafio 4
 CREATE VIEW vw_quantidade_pizzas AS
 SELECT
     pedido_id,
@@ -67,7 +67,7 @@ SELECT
 FROM itens_pedido
 GROUP BY pedido_id;
 
--- Consultar as VIEWS
+-- Consultar as views
 SELECT * FROM vw_pedidos1;
 SELECT * FROM vw_pedidos_itens;
 SELECT * FROM vw_pedidos_subtotal;
